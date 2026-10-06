@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://i.pinimg.com/1200x/30/b5/0e/30b50e38b8c8a7356052b757e48a3b9b.jpg");
+    background-size: 100% 100%;
+    color: #493536;
+}
+
+main {
+    max-width: 500px;
+    margin: 0px auto;
+    padding: 20px 16px;
+}
+h1 {
+    color: #c77d8b;
+}
+
+.sobre {
+    background-color: #fff;
+    border: 2px solid #4e388e;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+   
+}
+.sobre h4 {
+    margin: 0 0 4px 0;
+    color: #d78d9b;
+
+}
+.sobre p {
+    margin: 0;
+    color: #63a2e0;
+}
+
+/*Classes Modificadoras se somam ao card*/
+
+.album {
+    background-color: #F7C4D8;
+   
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #f6d245;
+}
+
+.album h4 {
+    background-color: #F7C4D8;
+    border-color: #26c42e;
+}
+
+.especial {
+    background-color: #F7C4D8;
+    border-color: #f6d245;
+}
+
+.musicas {
+    background-color: #F7C4D8;
+    border-color: #c4c426;
+}
+
+.esgotado {
+    opacity: 0.5;
+}
+
+.esgotado h4 {
+    text-decoration: line-through;
+    color: #a0a0a0;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #f6d245;
+}
+
+/* Ids sao unicos e nao podem ser repetidos na mesma pagina */
+
+#sobre-bea {
+    background-color: #F3A9C9;
+    border: none;
+    text-align: center;
+
+}
+
+#sobre-bea h4 {
+    color: #c28e00;
+    
+}
+
+#sobre-bea p {
+    color: #fff;
+}
