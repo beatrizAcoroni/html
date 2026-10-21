@@ -103,6 +103,11 @@ button {
   background-color: #cfd6e2;
 }
 
+.btn-voltar {
+  background-color: #e3e7ee;
+  color: #2b2d42;
+}
+
 /* Contorno para quem navega pelo teclado */
 button:focus-visible {
   outline: 3px solid #1a73c9;
