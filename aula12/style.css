@@ -1,0 +1,87 @@
+/* ===== Fonte ===== */
+
+
+
+:root {
+  --fundo: #1b0f21;      /* ameixa escuro */
+  --rosa: #f4a6c8;
+  --lilas: #b9a1ea;
+  --texto: #f8ebf2;
+}
+
+/* ===== Página ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 760px;               /* limita a largura e centraliza */
+  padding: 3rem 1.5rem 5rem;
+  background-color: var(--fundo);
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(244, 166, 200, 0.35), transparent 45%),
+    radial-gradient(circle at 85% 12%, rgba(185, 161, 234, 0.30), transparent 40%);
+  background-repeat: no-repeat;
+  color: var(--texto);
+  font-family: Georgia, "Nunito", serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* ===== Títulos ===== */
+h1 {
+  margin: 3rem 0 1rem;
+  font-family: "Nunito", Georgia, serif;
+  font-size: clamp(2.8rem, 12vw, 5.5rem);   /* diminui no celular */
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0 0 40px var(--rosa);
+}
+
+h2 {
+  margin: 4rem 0 1rem;
+  font-family: "Nunito", Georgia, serif;
+  font-size: 1.8rem;
+  color: var(--rosa);
+}
+
+p {
+  text-align: center;
+  color: var(--lilas);
+}
+
+/* ===== Mídias ===== */
+video,
+iframe,
+object {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  background-color: #000;
+}
+
+video,
+iframe {
+  height: auto;
+  aspect-ratio: 16 / 9;     /* mantém a proporção do vídeo */
+}
+
+object {
+  height: 420px;
+}
+
+audio {
+  display: block;
+  width: 100%;
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--rosa);
+}
+
+a:hover {
+  color: var(--lilas);
+}
