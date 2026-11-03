@@ -1,57 +1,83 @@
-/* ===== Fonte ===== */
-
-
 
 :root {
-  --fundo: #1b0f21;      /* ameixa escuro */
-  --rosa: #f4a6c8;
-  --lilas: #b9a1ea;
-  --texto: #f8ebf2;
+  --fundo: #020226;      
+  --jupiter: #f0a23a;      
+  --ouro: #ffd27a;         
+  --mars: #e0482f;         
+  --texto: #fdf1e0;        
+  --suave: #f3c9a0;        
 }
 
-/* ===== Página ===== */
+
 * {
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Stadium";
+    src: url("Stadium-Regular/stadium.ttf");
+}
+
 body {
   margin: 0 auto;
-  max-width: 760px;               /* limita a largura e centraliza */
+  max-width: 760px;              
   padding: 3rem 1.5rem 5rem;
   background-color: var(--fundo);
   background-image:
-    radial-gradient(circle at 20% 0%, rgba(244, 166, 200, 0.35), transparent 45%),
-    radial-gradient(circle at 85% 12%, rgba(185, 161, 234, 0.30), transparent 40%);
+    /* estrelas */
+    radial-gradient(1.5px 1.5px at 12% 18%, rgba(255, 255, 255, 0.9), transparent 60%),
+    radial-gradient(1px 1px at 30% 8%, rgba(255, 255, 255, 0.7), transparent 60%),
+    radial-gradient(1.5px 1.5px at 62% 14%, rgba(255, 255, 255, 0.8), transparent 60%),
+    radial-gradient(1px 1px at 78% 30%, rgba(255, 255, 255, 0.6), transparent 60%),
+    radial-gradient(1.5px 1.5px at 92% 6%, rgba(255, 255, 255, 0.9), transparent 60%),
+    radial-gradient(1px 1px at 8% 42%, rgba(255, 255, 255, 0.6), transparent 60%),
+    radial-gradient(1.5px 1.5px at 45% 36%, rgba(255, 255, 255, 0.7), transparent 60%),
+    
+    radial-gradient(circle at 15% 0%, rgba(240, 162, 58, 0.38), transparent 45%),
+    radial-gradient(circle at 90% 12%, rgba(224, 72, 47, 0.34), transparent 42%);
   background-repeat: no-repeat;
   color: var(--texto);
-  font-family: Georgia, "Nunito", serif;
+  font-family: Georgia, "Stadium", serif;
   font-size: 1.1rem;
   line-height: 1.7;
 }
 
-/* ===== Títulos ===== */
+
 h1 {
   margin: 3rem 0 1rem;
-  font-family: "Nunito", Georgia, serif;
-  font-size: clamp(2.8rem, 12vw, 5.5rem);   /* diminui no celular */
+  font-family: "Stadium", Georgia, serif;
+  font-size: clamp(2.4rem, 10vw, 5rem);
   line-height: 1;
+  letter-spacing: 0.08em;
   text-align: center;
-  text-shadow: 0 0 40px var(--rosa);
+  background: linear-gradient(90deg, var(--jupiter), var(--ouro) 45%, var(--mars));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 28px rgba(240, 162, 58, 0.55));
 }
 
 h2 {
   margin: 4rem 0 1rem;
   font-family: "Nunito", Georgia, serif;
   font-size: 1.8rem;
-  color: var(--rosa);
+  color: var(--jupiter);
+  border-bottom: 1px solid rgba(240, 162, 58, 0.3);
+  padding-bottom: 0.4rem;
+}
+
+
+h2:nth-of-type(even) {
+  color: var(--mars);
+  border-bottom-color: rgba(224, 72, 47, 0.35);
 }
 
 p {
   text-align: center;
-  color: var(--lilas);
+  color: var(--suave);
 }
 
-/* ===== Mídias ===== */
+
 video,
 iframe,
 object {
@@ -60,12 +86,13 @@ object {
   border: 0;
   border-radius: 8px;
   background-color: #000;
+  box-shadow: 0 0 40px rgba(240, 162, 58, 0.18);
 }
 
 video,
 iframe {
   height: auto;
-  aspect-ratio: 16 / 9;     /* mantém a proporção do vídeo */
+  aspect-ratio: 16 / 9;     
 }
 
 object {
@@ -77,11 +104,11 @@ audio {
   width: 100%;
 }
 
-/* ===== Links ===== */
+
 a {
-  color: var(--rosa);
+  color: var(--jupiter);
 }
 
 a:hover {
-  color: var(--lilas);
+  color: var(--mars);
 }
